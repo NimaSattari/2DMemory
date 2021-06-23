@@ -234,3 +234,58 @@ Total: 3.538100 ms (FindLiveObjects: 0.225600 ms CreateObjectMapping: 0.072200 m
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 1168.004384 seconds.
+  path: ProjectSettings/ProjectSettings.asset
+  artifactKey: Guid(00000000000000004000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/ProjectSettings.asset using Guid(00000000000000004000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f703780f50b3dfeadd5d9a5d857a5609') in 0.120568 seconds
+  Import took 0.125406 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 106.208109 seconds.
+  path: ProjectSettings/ProjectSettings.asset
+  artifactKey: Guid(00000000000000004000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/ProjectSettings.asset using Guid(00000000000000004000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd53051ee52351c8d0a19a7f2a5d71b65') in 0.004691 seconds
+  Import took 0.010559 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.987820 seconds.
+  path: ProjectSettings/ProjectSettings.asset
+  artifactKey: Guid(00000000000000004000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/ProjectSettings.asset using Guid(00000000000000004000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ac29cad8184214c2e128a1f6cc051c7') in 0.005275 seconds
+  Import took 0.009863 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.812679 seconds.
+  path: ProjectSettings/ProjectSettings.asset
+  artifactKey: Guid(00000000000000004000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/ProjectSettings.asset using Guid(00000000000000004000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f60daf2df7c14b5e0192bf34162486ec') in 0.007275 seconds
+  Import took 0.013351 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.54 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 49.8 MB.
+System memory in use after: 49.8 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2276.
+Total: 4.316700 ms (FindLiveObjects: 0.299800 ms CreateObjectMapping: 0.135400 ms MarkObjects: 3.691500 ms  DeleteObjects: 0.188500 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.56 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 49.7 MB.
+System memory in use after: 49.7 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2276.
+Total: 5.858000 ms (FindLiveObjects: 0.462100 ms CreateObjectMapping: 0.146900 ms MarkObjects: 5.029900 ms  DeleteObjects: 0.216900 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
