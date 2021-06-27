@@ -15,7 +15,7 @@ public class Music : MonoBehaviour
     {
         AudioClip audio = MusicAudio;
         GetComponent<AudioSource>().PlayOneShot(audio);
-        Invoke("PlayNextSong", audio.length);
+        Invoke("PlaySong", audio.length);
     }
 
     private void SetUpSingleton()

@@ -129,7 +129,6 @@ public class GameManager : MonoBehaviour
             btns[firstIndex].image.sprite = Back;
             btns[secondIndex].image.sprite = Back;
         }
-        yield return new WaitForSeconds(0.25f);
         firstChoice = secondChoice = false;
     }
     void CheckIfGameIsFinished()

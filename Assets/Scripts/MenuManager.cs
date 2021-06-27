@@ -74,7 +74,6 @@ public class MenuManager : MonoBehaviour
         audios.Play();
         if (MenuPanel.activeInHierarchy)
         {
-            GetLeaderBoard();
             SettingPanel.SetActive(true);
             MenuPanel.SetActive(false);
         }
