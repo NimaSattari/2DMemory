@@ -14,7 +14,6 @@ public class MenuManager : MonoBehaviour
         leaderboard = GetComponent<LeaderboardManager>();
         music = FindObjectOfType<AudioManager>();
     }
-
     public void ShowHideLevels()
     {
         music.PlayThis(music.DoubleClick);
