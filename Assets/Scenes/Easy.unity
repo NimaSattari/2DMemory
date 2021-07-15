@@ -187,7 +187,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &226427630
 GameObject:
@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 226427632}
   - component: {fileID: 226427634}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: GamePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -533,7 +533,7 @@ GameObject:
   - component: {fileID: 795463652}
   - component: {fileID: 795463651}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: WinPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -707,7 +707,7 @@ GameObject:
   - component: {fileID: 1577913555}
   - component: {fileID: 1577913554}
   m_Layer: 5
-  m_Name: Back
+  m_Name: BackButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -969,11 +969,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1783169648}
-  - component: {fileID: 1783169650}
   - component: {fileID: 1783169651}
-  - component: {fileID: 1783169652}
   - component: {fileID: 1783169653}
   - component: {fileID: 1783169654}
+  - component: {fileID: 1783169650}
+  - component: {fileID: 1783169652}
+  - component: {fileID: 1783169649}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -995,6 +996,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1783169649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783169647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a49103f86fa07e94ea95a79e28558934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  model: {fileID: 1783169650}
+  presenter: {fileID: 1783169652}
+  HowManyButtons: 6
 --- !u!114 &1783169650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1007,13 +1023,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c606095d72864974abe8c3db9b3cf81d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panel: {fileID: 226427631}
-  button: {fileID: 1270665236428961388, guid: 11eae3ef9594bd547ab68870ca0a4e61, type: 3}
-  HowManyButtons: 6
-  btns: []
-  Back: {fileID: -2413806693520163455, guid: fdfa877d38b83d0448ed7ab337754fee, type: 3}
-  Fronts: []
-  gameFronts: []
+  Buttons: 
+  Fronts: 
+  gameChoice: 0
 --- !u!114 &1783169651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1044,9 +1056,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 194e4af8bd6e2b7448031bab48bf57e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  panel: {fileID: 226427631}
+  buttonPrefab: {fileID: 1270665236428961388, guid: 11eae3ef9594bd547ab68870ca0a4e61, type: 3}
   btns: []
-  gameFronts: []
   Back: {fileID: -2413806693520163455, guid: fdfa877d38b83d0448ed7ab337754fee, type: 3}
+  Fronts: []
+  gameFronts: []
+  FinishText: {fileID: 0}
+  Finishpanel: {fileID: 0}
+  particle: {fileID: 0}
 --- !u!114 &1783169653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1071,11 +1089,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 326440fa9e693504a9b9cf343239e84e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameChoice: 0
-  HowManyButtons: 0
-  FinishText: {fileID: 2008571054}
-  Finishpanel: {fileID: 795463649}
-  particle: {fileID: 3612132111038453300, guid: 59ad5fb652a127340bc5dd52cad8bdf9, type: 3}
 --- !u!1 &1989229582
 GameObject:
   m_ObjectHideFlags: 0
@@ -1171,7 +1184,7 @@ RectTransform:
   - {fileID: 1577913553}
   - {fileID: 795463650}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
